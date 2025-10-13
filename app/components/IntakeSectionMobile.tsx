@@ -16,7 +16,7 @@ export default function IntakeSectionMobile() {
                 <hr className="border-t-[2px] border-[#3CCED7] max-w-[534px] w-full rounded-[8px] mb-[15px]" />
                 <p className="max-w-[534px] w-full h-[110px] font-[400] text-[20px] text-[#141414]">Get everything you need out of every new client call. The virtual receptionists at our legal intake call center will use your unique specifications to perform a legal intake for every new client caller.</p>
             </div>
-            <ButtonOrLink href="#pricing" padding="px-[24px] py-[22px]">See our pricing</ButtonOrLink>
+            <ButtonOrLink padding="px-[24px] py-[22px]">See our pricing</ButtonOrLink>
         </div>
     </div>
   );

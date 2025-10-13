@@ -16,12 +16,12 @@ export default function CRMSectionMobile() {
                 <p className="font-bold text-[32px] text-[#141414]">Your data&apos;s in good hands</p>
                     <hr className="border-t-[2px] border-[#3CCED7] max-w-[534px] w-full rounded-[8px] my-[10px]" />
                     <p className="max-w-[534px] h-[46px] font-[400] text-[20px] text-[#141414]">Our partnership with your CRM enables a seamless flow of information.</p>
-                     <ul className="list-none">
+                     <ul className="list-none mb-[15px]">
                         <ListItemComponent iconAlt="A checkmark that delinates a CRM benefit" message="Answering Legal&apos;s receptionists take down exactly the information you need." />
                         <ListItemComponent iconAlt="A checkmark that delinates a CRM benefit" message="Through native API integrations with our proprietary software, we make sure it&apos;s immediately where you need it to be." />
                         <ListItemComponent iconAlt="A checkmark that delinates a CRM benefit" message="All you&apos;ll have to do is open your CRM and follow up to secure your new client&apos;s business." />
                      </ul>
-                     <ButtonOrLink href="#pricing" padding="px-[24px] py-[22px]" className="mt-[20px]">See our pricing</ButtonOrLink>
+                     <ButtonOrLink padding="px-[24px] py-[22px]">See our pricing</ButtonOrLink>
             </div>
         </div>
     </div>

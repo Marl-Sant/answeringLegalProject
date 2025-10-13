@@ -213,7 +213,7 @@ export default function NavBar({
 
         <Image src={search} alt="Search Icon" />
 
-        <ButtonOrLink href="#try">Try for free</ButtonOrLink>
+        <ButtonOrLink padding="px-[13px]">Try for free</ButtonOrLink>
         </div>
       </div>
 

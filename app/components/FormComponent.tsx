@@ -245,7 +245,7 @@ export default function Form() {
       <div className="flex justify-center items-center mt-[5px]">
         <button
           type="submit"
-          className="text-[24px] flex justify-center items-center rounded-[12px] bg-[#0360E6] p-[16px] w-[268px] h-[49px] font-semibold text-white transition-colors hover:bg-[#161641] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0360E6] focus-visible:ring-offset-2"
+          className=" cursor-pointer text-[24px] flex justify-center items-center rounded-[12px] bg-[#0360E6] p-[16px] w-[268px] h-[49px] font-semibold text-white transition-colors hover:bg-[#161641] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0360E6] focus-visible:ring-offset-2"
         >
           See plans & pricing
         </button>

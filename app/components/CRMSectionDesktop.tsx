@@ -23,7 +23,7 @@ export default function CRMSectionDesktop() {
                         <ListItemComponent iconAlt="A checkmark that delinates a CRM benefit" message="All you’ll have to do is open your CRM and follow up to secure your new client’s business." />
                      </ul>
                 </div>
-                <ButtonOrLink href="#pricing" padding="px-[24px] py-[22px]">See our pricing</ButtonOrLink>
+                <ButtonOrLink padding="px-[24px] py-[22px]">See our pricing</ButtonOrLink>
             </div>
         </div>
     </div>

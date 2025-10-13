@@ -37,7 +37,7 @@ export default function HeroDesktop() {
                 </p>
             </div>
             <div className="w-[236px] h-[52px] flex gap-[32px] opacity-100 mt-[50px]">
-                <ButtonOrLink href="#seeourpricing" padding="px-[24px] py-[22px]">See our pricing</ButtonOrLink>
+                <ButtonOrLink padding="px-[24px] py-[22px]">See our pricing</ButtonOrLink>
             </div>
         </div>
     </div>
