@@ -24,5 +24,5 @@ Accessible Image Alts – Added descriptive alt text to improve both accessibili
 
 Structured Metadata – Implemented site-level metadata and JSON-LD schema to improve discoverability across Google and LinkedIn.
 
-I’m confident that this new understanding of SEO will help me bring even more value to your team.
+I’m confident that my understanding of SEO will help me bring even more value to your team.
 I’m fully expecting to see a wave of “legal answering service” ads following me around for a while… totally worth it.
