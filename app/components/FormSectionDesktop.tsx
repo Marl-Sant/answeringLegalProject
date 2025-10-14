@@ -15,9 +15,9 @@ export default function FormSectionDesktop() {
       aria-labelledby="form-desktop-heading"
       className="mx-auto w-full max-w-[1440px] bg-[#161641] px-[32px] py-[64px]"
     >
-      <div className="mx-auto flex w-full max-w-[1120px] items-start justify-between gap-[64px]">
+      <div className="mx-auto flex w-full max-w-[1120px] items-center justify-between gap-[64px]">
         
-        <div className="w-full max-w-[532px]">
+        <div className="w-full max-w-[532px] flex flex-col justify-center items-center">
           <h2
             id="form-desktop-heading"
             className="mb-[15px] text-[48px] font-bold leading-[1.15] text-white"
