@@ -1,21 +1,52 @@
 import React from "react";
-import AnsweringService from "@/public/AL_2ColorIcon-AnsweringService.svg"
-import AiChatBotLogo from "@/public/AL_2ColorIcon-Chatbot.svg"
-import LiveTranslationLogo from "@/public/AL_2ColorIcon-LVCv2.svg"
+import AnsweringService from "@/public/AL_2ColorIcon-AnsweringService.svg";
+import AiChatBotLogo from "@/public/AL_2ColorIcon-Chatbot.svg";
+import LiveTranslationLogo from "@/public/AL_2ColorIcon-LVCv2.svg";
 import DesktopFeatureCards from "./DesktopFeatureCards";
 
 
-
 export default function InfoSectionMobile() {
-    return(
-        <div className="w-[428px] h-[1406px] px-[16px] py-[64px] gap-[32px] flex justify-center">
-            <div className="w-[396px] h-[72px] px-[16px] flex gap-[24px] flex-col">
-                <p className="w-[364px] h-[46px] text-center font-bold text-[24px] mb-[15px]">Here&apos;s what we can do for your law firm</p>
-                <hr className="border-t-[2px] border-[#3CCED7] max-w-[1216px] w-full rounded" />
-                <DesktopFeatureCards iconSrc={AnsweringService} title="Legal answering service" message="With 24/7 legal intake, you'll never miss a potential client's call."></DesktopFeatureCards>
-                <DesktopFeatureCards iconSrc={AiChatBotLogo} title="   AI intake     chatbot" message="Turn web leads into clients with a chatbot powered by the latest in AI technology."></DesktopFeatureCards>
-                <DesktopFeatureCards iconSrc={LiveTranslationLogo} title="Live translation services" message="Break through the language barrier and schedule video conferences with live interpreters."></DesktopFeatureCards>
-            </div>
+  return (
+    <section
+      id="features"
+      aria-labelledby="features-heading"
+      className="mx-auto w-[428px] h-[1406px] px-[16px] py-[64px] flex justify-center"
+    >
+      <div className="w-[396px] flex flex-col gap-[24px]">
+        <header className="w-[396px] px-[16px]">
+          <h2
+            id="features-heading"
+            className="w-[364px] mx-auto text-center font-bold text-[24px] mb-[15px] text-[#141414]"
+          >
+            Here&apos;s what we can do for your law firm
+          </h2>
+          <span
+            aria-hidden="true"
+            className="block h-[2px] w-full rounded bg-[#3CCED7]"
+          />
+        </header>
+
+        <div role="list" aria-label="Core features" className="flex flex-col gap-[16px] items-center">
+          <DesktopFeatureCards
+            iconSrc={AnsweringService}
+            iconAlt="Legal answering service"
+            title="Legal answering service"
+            message="With 24/7 legal intake, you'll never miss a potential client's call."
+          />
+          <DesktopFeatureCards
+            iconSrc={AiChatBotLogo}
+            iconAlt="AI intake chatbot"
+            title="   AI intake   chatbot"
+            message="Turn web leads into clients with a chatbot powered by the latest in AI technology."
+          />
+          <DesktopFeatureCards
+            iconSrc={LiveTranslationLogo}
+            iconAlt="Live translation services"
+            title="Live translation services"
+            message="Break through the language barrier and schedule video conferences with live interpreters."
+          />
         </div>
-    )
+      </div>
+    </section>
+  );
 }

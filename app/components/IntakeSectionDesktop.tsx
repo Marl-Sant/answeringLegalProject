@@ -1,23 +1,60 @@
 import React from "react";
 import Image from "next/image";
-import receptionist from "@/public/Receptionist_IMG.png"
-import ButtonOrLink from '@/app/components/ButtonOrLink';
-
+import receptionist from "@/public/Receptionist_IMG.png";
+import ButtonOrLink from "@/app/components/ButtonOrLink";
 
 export default function IntakeSectionDesktop() {
+
+  /*
+  This section was labelled with "intake-heading" and given the id of "intake". Quickly
+  followed up with an H2 this gives a clean structure for crawlers to work with. I was also
+  cognizant to use the keywords of "intake/virtual receptionist" near the top of the section
+  to help with indexing. Also, we have the added benefit of having the text come before the
+  image which helps crawlers help undestand the reference.
+  */
+
   return (
-    <div className="max-w-[1440px] w-full h-[581px] px-[32px] py-[64px] gap-[50px] flex justify-center items-center">
-        <div className="max-w-[1100px] h-[453px] gap-[32px]">
-            <div className="max-w-[534px] w-full h-[369px] mix-w-[400px] py-[32px] gap-[32px] mb-[-80px]">
-                <p className="font-bold text-[32px] text-[#141414] max-w-[534px] w-full h-[61px] mb-[40px]">Design your perfect legal intake process</p>
-                <hr className="border-t-[2px] border-[#3CCED7] max-w-[534px] w-full rounded-[8px]" />
-                <p className="max-w-[534px] w-full h-[110px] font-[400] text-[20px] text-[#141414]">Get everything you need out of every new client call. The virtual receptionists at our legal intake call center will use your unique specifications to perform a legal intake for every new client caller.</p>
-            </div>
-            <ButtonOrLink padding="px-[24px] py-[22px]">See our pricing</ButtonOrLink>
+    <section
+      id="intake"
+      aria-labelledby="intake-heading"
+      className="mx-auto w-full max-w-[1440px] px-[32px] py-[64px]"
+    >
+      <div className="mx-auto grid w-full max-w-[1100px] grid-cols-[minmax(364px,534px)_minmax(364px,534px)] items-center gap-[32px]">
+       
+        <div className="w-full">
+          <h2
+            id="intake-heading"
+            className="mb-[24px] max-w-[534px] text-[32px] font-bold text-[#141414]"
+          >
+            Design your perfect legal intake process
+          </h2>
+
+          
+          <hr
+            aria-hidden="true"
+            className="mb-[24px] w-full max-w-[534px] rounded-[8px] border-t-[2px] border-[#3CCED7]"
+          />
+
+          <p className="mb-[28px] max-w-[534px] text-[20px] font-[400] leading-[1.4] text-[#141414]">
+            Get everything you need out of every new client call. The virtual receptionists at our legal intake call center will use your unique specifications to perform a legal intake for every new client caller.
+          </p>
+
+          <ButtonOrLink href="#pricing" padding="px-[24px] py-[22px]">
+            See our pricing
+          </ButtonOrLink>
         </div>
-        <div className="max-w-[534px] h-[453px] min-w-[364px] w-full mb-[60px]">
-            <Image src={receptionist} alt="A customer service representative on the phone" />
-        </div>
-    </div>
+
+      
+        <figure className="w-full">
+          <Image
+            src={receptionist}
+            alt="Attorney support specialist providing client intake through Answering Legal’s 24/7 phone service"
+            className="h-auto w-full rounded-[12px] object-cover"
+            sizes="(min-width: 1100px) 534px, 50vw"
+            priority={false}
+          />
+        </figure>
+      </div>
+    </section>
   );
 }

@@ -1,23 +1,57 @@
 import React from "react";
 import Image from "next/image";
-import receptionist from "@/public/Receptionist_IMG.png"
-import ButtonOrLink from '@/app/components/ButtonOrLink';
-
+import receptionist from "@/public/Receptionist_IMG.png";
+import ButtonOrLink from "@/app/components/ButtonOrLink";
 
 export default function IntakeSectionMobile() {
   return (
-    <div className="max-w-[428px] w-full h-[829px] p-[32px] gap-[50px] flex justify-center items-center">
-        <div className="max-w-[364px] h-[765px] gap-[32px]">
-        <div className="max-w-[364px] h-[300px] min-w-[364px] w-full mb-[40px]">
-            <Image src={receptionist} alt="A customer service representative on the phone" />
+    <section
+      id="intake-mobile"
+      aria-labelledby="intake-mobile-heading"
+      className="mx-auto w-[428px] px-[32px] py-[32px]"
+    >
+      <div className="mx-auto w-[364px] flex flex-col gap-[32px]">
+        {/* Image */}
+        <figure className="w-[364px]">
+          <Image
+            src={receptionist}
+            alt="Attorney support specialist providing client intake through Answering Legal’s 24/7 phone service"
+            className="w-full h-auto rounded-[12px] object-cover"
+            sizes="364px"
+            priority={false}
+          />
+          <figcaption className="sr-only">
+            Professional receptionist handling law firm client intake.
+          </figcaption>
+        </figure>
+
+
+        <div className="w-full">
+          <h2
+            id="intake-mobile-heading"
+            className="mb-[16px] text-[32px] font-bold text-[#141414]"
+          >
+            Design your perfect legal intake process
+          </h2>
+
+          <hr
+            aria-hidden="true"
+            className="mb-[16px] w-full rounded-[8px] border-t-[2px] border-[#3CCED7]"
+          />
+
+          <p className="text-[20px] font-[400] leading-[1.4] text-[#141414]">
+            Get everything you need out of every new client call. The virtual
+            receptionists at our legal intake call center will use your unique
+            specifications to perform a legal intake for every new client caller.
+          </p>
         </div>
-            <div className="max-w-[534px] w-full h-[369px] mix-w-[400px] py-[32px] gap-[32px]">
-                <p className="font-bold text-[32px] text-[#141414] max-w-[534px] w-full h-[61px] mb-[50px]">Design your perfect legal intake process</p>
-                <hr className="border-t-[2px] border-[#3CCED7] max-w-[534px] w-full rounded-[8px] mb-[15px]" />
-                <p className="max-w-[534px] w-full h-[110px] font-[400] text-[20px] text-[#141414]">Get everything you need out of every new client call. The virtual receptionists at our legal intake call center will use your unique specifications to perform a legal intake for every new client caller.</p>
-            </div>
-            <ButtonOrLink padding="px-[24px] py-[22px]">See our pricing</ButtonOrLink>
+
+        <div className="w-full">
+          <ButtonOrLink href="#pricing" padding="px-[24px] py-[22px]">
+            See our pricing
+          </ButtonOrLink>
         </div>
-    </div>
+      </div>
+    </section>
   );
 }

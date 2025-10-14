@@ -17,6 +17,17 @@ export default function DesktopFeatureCards({
   className,
   ...rest
 }: FeatureCardProps) {
+
+  /*
+    I designed FeatureCardProps to extend HTMLAttributes<HTMLElement> so I can pass 
+    in any native attributes like data-*, aria-*, id, or onClick without changing 
+    the component’s surface. I also merged className with local styles so I can 
+    easily adjust spacing, shadows, or other Tailwind variants without rewriting 
+    the component. I use Tailwind’s utility tokens for radius, spacing, and shadow, 
+    so visual updates are consistent and only require one small change. I encapsulated 
+    the structure, namely the title, message, and divider,  to create a repeatable 
+    card pattern I can reuse across multiple sections or pages.
+  */
   return (
     <figure className={["inline-block", className].filter(Boolean).join(" ")} {...rest}>
 
@@ -46,7 +57,7 @@ export default function DesktopFeatureCards({
           </div>
         </div>
           <div className="h-[2px] w-[320px] rounded-[5px] bg-[#3CCED7] mt-[-100px]" />
-        <p className="w-[320px] h-[71px] font-semibold text-[16px] text-center">
+        <p className="w-[320px] h-[71px] font-semibold text-[16px] text-center mt-[20px]">
           {message}
         </p>
       </div>

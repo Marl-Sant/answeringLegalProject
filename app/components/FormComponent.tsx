@@ -2,17 +2,17 @@
 
 import { useState, type FormEvent } from 'react';
 
-
-type Errors = { 
-    firstName?: string,
-    lastName?: string,
-    companyName?: string,
-    email?: string,
-    phoneNum?: string,
-
-};
+type FieldKey = 'firstName' | 'lastName' | 'companyName' | 'email' | 'phoneNum';
+type Errors = Partial<Record<FieldKey, string>>;
 
 export default function Form() {
+  /*
+  I used a FieldKey and Errors types constrain keys in effory to keep inputs/validators in
+  sync. I also kept accessibility in mind by using aria properties, like invalid and 
+  describedby, for users that may use screen readers or other assistive tech.
+  */
+
+
   const [values, setValues] = useState({ 
     firstName: '', 
     lastName: '',
@@ -21,6 +21,7 @@ export default function Form() {
     phoneNum: ''
   });
   const [errors, setErrors] = useState<Errors>({});
+  const [submitted, setSubmitted] = useState(false);
 
   function validate(v = values): Errors {
     const e: Errors = {};
@@ -61,18 +62,32 @@ export default function Form() {
     ev.preventDefault();
     const e = validate();
     setErrors(e);
+    setSubmitted(true);
     if (Object.keys(e).length > 0) return;
     window.alert('✅ Submitted!');
+    setSubmitted(false)
   }
+
+  const hasErrors = Object.keys(errors).length > 0;
+  const showGlobalError = submitted && hasErrors;
 
   return (
     <form
       onSubmit={onSubmit}
       noValidate
-      className='w-full h-[351px] flex flex-col gap-6 opacity-100'
+      className='w-full h-auto flex flex-col gap-6 opacity-100'
     >
-      
-      <div className="w-full h-[51px] flex flex-col gap-[7px]">
+  
+        <p
+          role={showGlobalError ? 'alert' : undefined}
+          className={showGlobalError ? 'text-[18px] text-red-600' : 'hidden'}
+        >
+          Please fill in a valid value for all required fields:{' '}
+          <span className="font-semibold">Name, Company Name, Email, Phone</span>
+        </p>
+   
+
+      <div className="w-full h-auto flex flex-col gap-[7px]">
         <label
           htmlFor="firstName"
           className={["w-full h-[17px] font-semibold text-[16px] leading-none", 
@@ -106,7 +121,7 @@ export default function Form() {
         )}
       </div>
 
-      <div className="w-full h-[51px] flex flex-col gap-[7px]">
+      <div className="w-full h-auto flex flex-col gap-[7px]">
         <label
           htmlFor="lastName"
           className={["w-full h-[17px] font-semibold text-[16px] leading-none", 
@@ -141,9 +156,9 @@ export default function Form() {
       </div>
 
 
-      <div className="w-full h-[51px] flex flex-col gap-[7px]">
+      <div className="w-full h-auto flex flex-col gap-[7px]">
         <label
-          htmlFor="email"
+          htmlFor="companyName"
           className={["w-full h-[17px] font-semibold text-[16px] leading-none", 
             errors.companyName ?  "text-[#911B1B]"
             : "text-[#141414]"].join(' ')}
@@ -174,7 +189,7 @@ export default function Form() {
           </p>
         )}
       </div>
-      <div className="w-full h-[51px] flex flex-col gap-[7px]">
+      <div className="w-full h-auto flex flex-col gap-[7px]">
         <label
           htmlFor="email"
           className={["w-full h-[17px] font-semibold text-[16px] leading-none", 
@@ -208,7 +223,7 @@ export default function Form() {
         )}
       </div>
 
-      <div className="w-full h-[51px] flex flex-col gap-[7px]">
+      <div className="w-full h-auto flex flex-col gap-[7px]">
         <label
           htmlFor="phoneNum"
           className={["w-full h-[17px] font-semibold text-[16px] leading-none", 
@@ -236,7 +251,7 @@ export default function Form() {
           required
         />
         {errors.phoneNum && (
-          <p id="companyName-error" className="mt-[-4px] text-xs text-red-600">
+          <p id="phoneNum-error" className="mt-[-4px] text-xs text-red-600">
             {errors.phoneNum}
           </p>
         )}

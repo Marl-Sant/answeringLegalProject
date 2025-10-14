@@ -1,37 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Marlon Santos
+- 34 year old software engineer based in South Florida
+- Experienced with Next.js, TailwindCSS, and TypeScript/JavaScript
+- Exceptional soft skills from working on cross-functional teams and instructing students
+- Pretty charming
 
-## Getting Started
+## Why I want to work for Answering Legal
+First, I want to thank you for taking the time to review my project. I’ve genuinely enjoyed building this over the past few days.
 
-First, run the development server:
+I want to work for Answering Legal because of my passion for frontend development. While I’m a full-stack engineer, I naturally gravitate toward the frontend because I love seeing my work come to life with every keystroke.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Your company’s long-standing reputation and outstanding reviews reflect an exceptional level of service, one that I’d be proud to contribute to.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Also, if the rest of the team shares the same energy and charm I experienced during my interview, I know I’d be a great cultural fit.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## A Touch of SEO
+During my interview, Nick mentioned that SEO would play a significant role in this position. While most of my past projects were internal or not customer-facing, I wanted to take this opportunity to dive deeper into SEO best practices and apply them directly to this assessment.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+SEO Improvements I Implemented
 
-## Learn More
+Semantic Headings – Used logical heading hierarchy h1 – h3 to help search crawlers understand page structure.
 
-To learn more about Next.js, take a look at the following resources:
+Accessible Image Alts – Added descriptive alt text to improve both accessibility and search visibility.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Structured Metadata – Implemented site-level metadata and JSON-LD schema to improve discoverability across Google and LinkedIn.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# answeringLegalProject
+I’m confident that this new understanding of SEO will help me bring even more value to your team.
+I’m fully expecting to see a wave of “legal answering service” ads following me around for a while… totally worth it.
