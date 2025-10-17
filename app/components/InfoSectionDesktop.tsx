@@ -49,13 +49,17 @@ export default function InfoSectionDesktop() {
           iconSrc={AnsweringService}
           iconAlt="Legal answering service"
           title="Legal answering service"
+          titleSize= "lg:text-[30.05px] text-[25px]"
+          messageSize="xl:text-[18px] lg:text-[16px] text-[14px]"
           message="With 24/7 legal intake, you'll never miss a potential client's call."
         />
         <DesktopFeatureCards
           role="listitem"
           iconSrc={AiChatBotLogo}
           iconAlt="AI intake chatbot"
-          title="   AI intake   chatbot"
+          title="   AI intake      chatbot"
+          titleSize= "lg:text-[30.05px] text-[25px]"
+          messageSize="xl:text-[18px] lg:text-[16px] text-[14px]" 
           message="Turn web leads into clients with a chatbot powered by the latest in AI technology."
         />
         <DesktopFeatureCards
@@ -63,6 +67,9 @@ export default function InfoSectionDesktop() {
           iconSrc={LiveTranslationLogo}
           iconAlt="Live translation services"
           title="Live translation services"
+          size="lg:text-[30.05px] text-[25px]"
+          titleSize= "lg:text-[30.05px] text-[25px]" 
+          messageSize="xl:text-[18px] lg:text-[16px] text-[14px]"
           message="Break through the language barrier and schedule video conferences with live interpreters."
         />
       </div>

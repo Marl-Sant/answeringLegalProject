@@ -31,18 +31,24 @@ export default function InfoSectionMobile() {
             iconSrc={AnsweringService}
             iconAlt="Legal answering service"
             title="Legal answering service"
+            titleSize= "text-[30.05px]"
+            messageSize="text-[18px]" 
             message="With 24/7 legal intake, you'll never miss a potential client's call."
           />
           <DesktopFeatureCards
             iconSrc={AiChatBotLogo}
             iconAlt="AI intake chatbot"
             title="           AI intake            chatbot"
+            titleSize= "text-[30.05px]"
+            messageSize="text-[18px]" 
             message="Turn web leads into clients with a chatbot powered by the latest in AI technology."
           />
           <DesktopFeatureCards
             iconSrc={LiveTranslationLogo}
             iconAlt="Live translation services"
             title="Live translation services"
+            titleSize= "text-[30.05px]"
+            messageSize="text-[18px]" 
             message="Break through the language barrier and schedule video conferences with live interpreters."
           />
         </div>

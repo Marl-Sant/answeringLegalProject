@@ -7,6 +7,8 @@ type FeatureCardProps = {
   title: string;
   message: string;
   iconClassName?: string;
+  titleSize: string;
+  messageSize: string;
 } & HTMLAttributes<HTMLElement>;
 
 export default function DesktopFeatureCards({
@@ -15,6 +17,8 @@ export default function DesktopFeatureCards({
   title,
   message,
   className,
+  titleSize,
+  messageSize,
   ...rest
 }: FeatureCardProps) {
 
@@ -51,13 +55,13 @@ export default function DesktopFeatureCards({
           />
           </div>
           <div className="max-w-[320px] w-full h-[64px]">
-            <div className="font-bold xl:text-[32px] lg:text-[30.75px] text-[25px] text-center vertical-middle">
+            <div className={["font-bold text-center vertical-middle " + titleSize].join(" ")}>
               {title}
             </div>
           </div>
         </div>
           <div className="h-[2px] w-full max-w-[320px] rounded-[5px] bg-[#3CCED7] mt-[-100px]" />
-        <p className="max-w-[320px] w-full h-[71px] font-semibold text-[14px] text-center mt-[20px]">
+        <p className={["max-w-[320px] w-full h-[71px] font-semibold text-center mt-[20px] " + messageSize].join(" ")}>
           {message}
         </p>
       </div>
