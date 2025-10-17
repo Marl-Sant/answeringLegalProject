@@ -67,7 +67,6 @@ export default function InfoSectionDesktop() {
           iconSrc={LiveTranslationLogo}
           iconAlt="Live translation services"
           title="Live translation services"
-          size="lg:text-[30.05px] text-[25px]"
           titleSize= "lg:text-[30.05px] text-[25px]" 
           messageSize="xl:text-[18px] lg:text-[16px] text-[14px]"
           message="Break through the language barrier and schedule video conferences with live interpreters."
