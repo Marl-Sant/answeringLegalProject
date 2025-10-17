@@ -51,13 +51,13 @@ export default function DesktopFeatureCards({
           />
           </div>
           <div className="max-w-[320px] w-full h-[64px]">
-            <div className="font-bold xl:text-[32px] lg:text-[30.75px] text-[25.75px] text-center vertical-middle">
+            <div className="font-bold xl:text-[32px] lg:text-[30.75px] text-[25px] text-center vertical-middle">
               {title}
             </div>
           </div>
         </div>
           <div className="h-[2px] w-full max-w-[320px] rounded-[5px] bg-[#3CCED7] mt-[-100px]" />
-        <p className="max-w-[320px] w-full h-[71px] font-semibold text-[15.25px] text-center mt-[20px]">
+        <p className="max-w-[320px] w-full h-[71px] font-semibold text-[14px] text-center mt-[20px]">
           {message}
         </p>
       </div>
