@@ -5,7 +5,7 @@ export default function FormSectionMobile() {
   return (
     <section
       aria-labelledby="form-mobile-heading"
-      className="mx-auto w-[428px] bg-[#161641] px-[16px] py-[64px]"
+      className="mx-auto w-full bg-[#161641] px-[16px] py-[64px]"
     >
       <div className="mx-auto w-[396px]">
         <div className="mb-[32px]">

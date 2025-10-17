@@ -33,7 +33,7 @@ export default function DesktopFeatureCards({
 
       <div
         className="
-          w-[352px] h-[370px]
+          w-full max-w-[352px] h-[370px]
           bg-white text-black
           rounded-[20px]
           px-[16px] py-[32px]
@@ -41,7 +41,7 @@ export default function DesktopFeatureCards({
           shadow-[2.09px_2.09px_4.17px_#00000040]
         "
       >
-        <div className="max-w-[320px] h-[306px] gap-24[px]">
+        <div className="max-w-[320px] w-full h-[306px] gap-24[px]">
           <div className="w-full h-[100px] rounded-[20px] flex">
             <Image
             src={iconSrc}
@@ -50,14 +50,14 @@ export default function DesktopFeatureCards({
             priority={false}
           />
           </div>
-          <div className="w-[320px] h-[64px]">
-            <div className="font-bold text-[32px] text-center vertical-middle">
+          <div className="max-w-[320px] w-full h-[64px]">
+            <div className="font-bold xl:text-[32px] lg:text-[30.75px] text-[25.75px] text-center vertical-middle">
               {title}
             </div>
           </div>
         </div>
-          <div className="h-[2px] w-[320px] rounded-[5px] bg-[#3CCED7] mt-[-100px]" />
-        <p className="w-[320px] h-[71px] font-semibold text-[16px] text-center mt-[20px]">
+          <div className="h-[2px] w-full max-w-[320px] rounded-[5px] bg-[#3CCED7] mt-[-100px]" />
+        <p className="max-w-[320px] w-full h-[71px] font-semibold text-[15.25px] text-center mt-[20px]">
           {message}
         </p>
       </div>

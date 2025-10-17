@@ -16,7 +16,7 @@ export default function FooterMobile() {
       id="site-footer-mobile"
       aria-labelledby="footer-mobile-heading"
       className="
-        mx-auto w-full max-w-[429px]
+        mx-auto w-full
         px-[16px] py-[72px]
         flex flex-col justify-center items-center gap-[32px]
         bg-[#161641]
@@ -39,15 +39,15 @@ export default function FooterMobile() {
         <p className="font-extrabold text-[12px] text-[#3CCED7]">
           MONDAY TO FRIDAY FROM 9 AM TO 7 PM EST
         </p>
+      </div>
         <hr
           className="w-full h-[4px] bg-[#16166b85] border-0 mt-[30px]"
           aria-hidden="true"
         />
-      </div>
 
       <nav
         aria-label="Footer sections"
-        className="w-[396px] h-[115px] grid grid-cols-2 grid-rows-3 gap-[32px] px-[25px]"
+        className="w-full h-auto grid grid-cols-2 grid-rows-3 gap-[32px] px-[25px]"
       >
         {FOOTER_SECTIONS.map((section) => (
           <Link

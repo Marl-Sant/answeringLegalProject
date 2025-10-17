@@ -125,7 +125,6 @@ export default function BlogSectionDesktop() {
           />
         </button>
 
-        {/* Cards list */}
         <div
           id={listId}
           role="list"

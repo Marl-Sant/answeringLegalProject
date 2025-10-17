@@ -140,7 +140,7 @@ export default function FooterDesktop() {
      
       <hr className="max-w-[1228px] w-full border-t-[3px] border-[#16166b85]" />
       
-      <div className="w-[331px] h-[15px] flex items-center justify-center">
+      <div className=" w-full max-w-[331px] h-[15px] flex items-center justify-center">
         <p className="font-extrabold text-[12px] text-center text-white">
           © 2024 Answering Legal · All Rights Reserved
         </p>

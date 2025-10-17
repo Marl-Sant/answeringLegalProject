@@ -8,18 +8,19 @@ export default function HeroMobile() {
     <section
       id="hero"
       aria-labelledby="hero-heading"
-      className="relative w-[428px] h-[686px] opacity-100"
+      className="relative w-full h-[686px] opacity-100 mb-[1px]"
     >
       
       <Image
         src={heroMobile}
         alt="24/7 legal answering service representative assisting an attorney over the phone"
         priority
-        sizes="428px"
+        sizes="(max-width: 428px) 100vw, 428px"
+        className="block w-full h-auto"
       />
 
       
-      <div className="absolute bottom-0 left-0 w-[428px] h-[333px] bg-[#161641] px-[16px] py-[32px] flex flex-col items-center">
+      <div className="absolute inset-x-0 bottom-0 h-[333px] bg-[#161641] px-[16px] py-[32px] flex flex-col items-center">
         
         <div className="w-full max-w-[396px] flex items-center justify-around">
           <span className="font-bold text-[24px] text-white">Excellent 4.84</span>

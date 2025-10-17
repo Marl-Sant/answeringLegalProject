@@ -8,7 +8,7 @@ export default function Hero() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkViewport = () => setIsMobile(window.innerWidth < 1439);
+    const checkViewport = () => setIsMobile(window.innerWidth < 768);
     checkViewport();
     console.log(window.innerWidth, isMobile)
     window.addEventListener('resize', checkViewport);

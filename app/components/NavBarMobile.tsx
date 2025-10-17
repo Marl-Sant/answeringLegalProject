@@ -4,7 +4,7 @@ import logo from "@/public/Answering LegalTM_Blue.png";
 
 export default function NavBarMobile() {
     return(
-        <nav className="w-[428px] h-[64px] flex justify-between items-center px-[16px] py-[8px]">
+        <nav className="w-full h-[64px] flex items-center justify-between px-[16px] py-[8px]">
             <div className="w-[267px] h-[42px] mt-[-14px]">
                 <Image src={logo} alt="Answering Legal Logo" className=""/>
             </div>

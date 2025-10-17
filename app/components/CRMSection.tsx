@@ -8,7 +8,7 @@ export default function CRMSection() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkViewport = () => setIsMobile(window.innerWidth < 1439);
+    const checkViewport = () => setIsMobile(window.innerWidth < 830);
     checkViewport();
     console.log(window.innerWidth, isMobile)
     window.addEventListener('resize', checkViewport);

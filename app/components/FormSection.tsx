@@ -8,7 +8,7 @@ export default function FormSection() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkViewport = () => setIsMobile(window.innerWidth < 1439);
+    const checkViewport = () => setIsMobile(window.innerWidth < 890);
     checkViewport();
     console.log(window.innerWidth, isMobile)
     window.addEventListener('resize', checkViewport);

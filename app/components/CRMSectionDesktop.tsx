@@ -17,7 +17,7 @@ export default function CRMSectionDesktop() {
     <section
       id="crm"
       aria-labelledby="crm-heading"
-      className="mt-[200px] w-full max-w-[1440px] h-[581px] px-[32px] py-[64px] flex items-center justify-center"
+      className="w-full max-w-[1440px] h-[581px] px-[32px] py-[64px] flex items-center justify-center"
     >
       <div className="w-full max-w-[1100px] flex gap-[32px]">
         

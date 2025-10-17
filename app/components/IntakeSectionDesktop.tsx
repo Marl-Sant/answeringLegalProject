@@ -24,7 +24,7 @@ export default function IntakeSectionDesktop() {
         <div className="w-full">
           <h2
             id="intake-heading"
-            className="mb-[24px] max-w-[534px] text-[32px] font-bold text-[#141414]"
+            className="mb-[24px] w-full max-w-[534px] text-[32px] font-bold text-[#141414]"
           >
             Design your perfect legal intake process
           </h2>
@@ -35,7 +35,7 @@ export default function IntakeSectionDesktop() {
             className="mb-[24px] w-full max-w-[534px] rounded-[8px] border-t-[2px] border-[#3CCED7]"
           />
 
-          <p className="mb-[28px] max-w-[534px] text-[20px] font-[400] leading-[1.4] text-[#141414]">
+          <p className="mb-[28px] w-full max-w-[534px] text-[20px] font-[400] leading-[1.4] text-[#141414]">
             Get everything you need out of every new client call. The virtual receptionists at our legal intake call center will use your unique specifications to perform a legal intake for every new client caller.
           </p>
 

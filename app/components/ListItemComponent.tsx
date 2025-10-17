@@ -36,10 +36,10 @@ export default function ListItemComponent({
         src={Check}
         alt={isDecorative ? "" : iconAlt}
         aria-hidden={isDecorative}
-        className="w-[32px] h-[32px]"
+        className="max-w-[32px] h-[32px]"
         sizes="32px"
       />
-      <span className="max-w-[486px] text-[16px] text-[#141414]">
+      <span className="max-w-[486px] w-full min-w-[200px] text-[16px] text-[#141414]">
         {message}
       </span>
     </li>

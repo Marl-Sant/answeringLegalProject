@@ -9,9 +9,9 @@ export default function CRMSectionMobile() {
     <section
       id="crm"
       aria-labelledby="crm-heading"
-      className="mx-auto w-[428px] h-[907px] px-[16px] py-[32px] flex flex-col gap-[50px] mb-[50px]"
+      className="relative mx-auto max-w-[428px] w-full h-[907px] px-[16px] py-[32px] flex flex-col gap-[50px] mb-[50px]"
     >
-      <div className="mx-auto w-[396px] flex flex-col gap-[32px]">
+      <div className="mx-auto max-w-[396px] w-full flex flex-col gap-[32px]">
         
         <figure className="w-[396px]">
           <Image
@@ -25,7 +25,7 @@ export default function CRMSectionMobile() {
         </figure>
 
        
-        <div className="w-[396px] py-[32px]">
+        <div className="max-w-[396px] py-[32px]">
           <header className="mb-[12px]">
             <h2 id="crm-heading" className="font-bold text-[32px] text-[#141414]">
               Your data’s in good hands

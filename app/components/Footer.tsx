@@ -8,7 +8,7 @@ export default function BlogSection() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkViewport = () => setIsMobile(window.innerWidth < 1439);
+    const checkViewport = () => setIsMobile(window.innerWidth < 1200);
     checkViewport();
     console.log(window.innerWidth, isMobile)
     window.addEventListener('resize', checkViewport);

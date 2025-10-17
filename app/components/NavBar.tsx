@@ -8,7 +8,7 @@ export default function NavBar() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkViewport = () => setIsMobile(window.innerWidth < 1439);
+    const checkViewport = () => setIsMobile(window.innerWidth < 1115);
     checkViewport();
     console.log(window.innerWidth, isMobile)
     window.addEventListener('resize', checkViewport);

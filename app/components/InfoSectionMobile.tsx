@@ -10,13 +10,13 @@ export default function InfoSectionMobile() {
     <section
       id="features"
       aria-labelledby="features-heading"
-      className="mx-auto w-[428px] h-[1406px] px-[16px] py-[64px] flex justify-center"
+      className="w-full max-w-[428px] h-[1406px] px-[16px] py-[64px] flex justify-center"
     >
       <div className="w-[396px] flex flex-col gap-[24px]">
         <header className="w-[396px] px-[16px]">
           <h2
             id="features-heading"
-            className="w-[364px] mx-auto text-center font-bold text-[24px] mb-[15px] text-[#141414]"
+            className="w-[364px] text-center font-bold text-[24px] mb-[15px] text-[#141414]"
           >
             Here&apos;s what we can do for your law firm
           </h2>
@@ -36,7 +36,7 @@ export default function InfoSectionMobile() {
           <DesktopFeatureCards
             iconSrc={AiChatBotLogo}
             iconAlt="AI intake chatbot"
-            title="   AI intake   chatbot"
+            title="           AI intake            chatbot"
             message="Turn web leads into clients with a chatbot powered by the latest in AI technology."
           />
           <DesktopFeatureCards

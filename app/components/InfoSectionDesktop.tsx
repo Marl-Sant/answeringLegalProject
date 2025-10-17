@@ -23,12 +23,12 @@ export default function InfoSectionDesktop() {
     <section
       id="features"
       aria-labelledby="features-heading"
-      className="relative z-10 mx-auto w-full max-w-[1440px] h-[340px] px-[32px] py-[64px] flex flex-col items-center gap-[32px] mt-[-250px]"
+      className="relative z-10 mx-auto w-full max-w-[1440px] h-[340px] px-[32px] py-[64px] flex flex-col items-center gap-[32px]"
     >
-      <header className="w-full max-w-[1376px] px-[80px] flex items-center justify-center">
+      <header className="w-full max-w-[1376px] px-[80px] flex items-center justify-center relative -mt-[250px]">
         <h2
           id="features-heading"
-          className="max-w-[1216px] font-bold text-[32px] text-[#FFFFFF] text-center text-shadow-[2.09px_2.09px_4.17px_#00000040]"
+          className="max-w-[1216px] font-bold text-[32px] text-[#FFFFFF] text-center text-shadow-[2.09px_2.09px_4.17px_#00000040] whitespace-nowrap "
         >
           Here&apos;s what we can do for your law firm
         </h2>

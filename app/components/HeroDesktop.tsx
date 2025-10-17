@@ -30,7 +30,7 @@ export default function HeroDesktop() {
 
         <div className="absolute inset-0 z-10 flex p-4"
              style={{ top: "10%", left: "9.5%" }}>
-          <div className="max-w-[650px] space-y-4">
+          <div className="w-full max-w-[650px] space-y-4">
             <h1
               id="hero-heading"
               className="font-bold text-[48px] leading-[100%] text-white mb-[16px]"

@@ -34,7 +34,7 @@ export default function BlogCardComponent({
     <article
       itemScope
       itemType="https://schema.org/BlogPosting"
-      className="w-[352px] rounded-[20px] p-4 bg-white shadow-[2.09px_2.09px_4.17px_#00000040] focus-within:-translate-y-0.5 transition-transform"
+      className="max-w-[352px] w-full rounded-[20px] p-4 bg-white shadow-[2.09px_2.09px_4.17px_#00000040] focus-within:-translate-y-0.5 transition-transform"
       {...rest}
     >
       <Link href={href} aria-label={`Read: ${title}`} itemProp="url">

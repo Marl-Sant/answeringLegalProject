@@ -16,7 +16,7 @@ import {
 type MenuKey = "products" | "about" | "resources" | "pricing" | null;
 
 
-export default function NavBar() {
+export default function NavBarDesktop() {
   const [activeMenu, setActiveMenu] = useState<MenuKey>(null);
   const navRef = useRef<HTMLElement | null>(null);
 
@@ -84,7 +84,7 @@ export default function NavBar() {
   // Two-chevron swap
   function ChevronPair({ active }: { active: boolean }) {
     return (
-      <span className="relative inline-flex w-4 items-center justify-center items-center mt-[-5px]">
+      <span className="relative inline-flex max-w-4 items-center justify-center items-center mt-[-5px]">
         <span aria-hidden="true" className={active ? "hidden" : ""}>⌄</span>
         <span aria-hidden="true" className={active ? "" : "hidden"}>⌃</span>
       </span>
@@ -93,10 +93,10 @@ export default function NavBar() {
 
   // ===================== NAV ITEMS CONFIG =====================
   const navItems: { key: Exclude<MenuKey, null>; label: string; width: string }[] = [
-    { key: "products", label: "Products", width: "w-[113px]" },
-    { key: "about", label: "About", width: "w-[83px]" },
-    { key: "resources", label: "Resources", width: "w-[126px]" },
-    { key: "pricing", label: "Pricing", width: "w-[126px]" },
+    { key: "products", label: "Products", width: "w-full" },
+    { key: "about", label: "About", width: "w-full" },
+    { key: "resources", label: "Resources", width: "w-full" },
+    { key: "pricing", label: "Pricing", width: "w-full " },
   ];
   // ============================================================
 
@@ -115,7 +115,7 @@ export default function NavBar() {
       {/* ===================== Row 1 (Top info bar) ===================== */}
       <div
         className={[
-          "min-w-[950px] max-w-[1440px] flex",
+          "min-w-[429px] max-w-[1440px] w-full flex",
           "items-center justify-end gap-[32px]",
         ].join(" ")}
       >
@@ -143,16 +143,16 @@ export default function NavBar() {
         className={[
           "mt-3 flex items-center justify-between",
           "max-w-[1376px]",
-          "min-w-[950px]",
+          "min-w-[429px]",
         ].join(" ")}
       >
-        <div className="flex h-12 w-[293px] items-center">
+        <div className="flex h-12 w-full max-w-[293px] items-center">
           <Link
             href="/"
             className="inline-flex items-center text-[24px] font-bold leading-none text-[#141414]"
             aria-label="Home"
           >
-            <Image src={logo} alt="Answering Legal Logo" />
+            <Image src={logo} alt="Answering Legal Logo" className="w-full h-full object-cover"/>
           </Link>
         </div>
 
@@ -160,7 +160,7 @@ export default function NavBar() {
         <div
           className={[
             "flex items-center",
-            "w-[556px]",
+            "max-w-[556px] w-full",
             "h-[15px]",
             "px-[32px]",
             "gap-[32px]"
@@ -185,7 +185,7 @@ export default function NavBar() {
           className={[
             "flex",
             "gap-4",
-            "w-[212px] h-[43.97px]",
+            "w-full max-w-[212px] h-[43.97px]",
           ].join(" ")}
         >
           <Image src={search} alt="Search Icon"/>
